@@ -31,8 +31,9 @@ Otorga permisos de ejecución a los archivos:
 chmod +x wireguard.sh
 chmod +x vpn-manager.desktop
 ```
-```bash
+
 Ejecuta el script desde la terminal:
+```bash
 ./wireguard.sh
 ```
 O desde el icono del escritorio, si has configurado vpn-manager.desktop.
