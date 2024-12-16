@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WireGuard VPN Manager
+Comment=Gestor de VPN con WireGuard
+Exec=gnome-terminal -- /"path-to-script"/wireguard.sh
+Icon=network-vpn
+Terminal=true
+Categories=Network;
