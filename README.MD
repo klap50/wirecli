@@ -7,6 +7,7 @@ Para que este script funcione correctamente, es necesario otorgar permisos de ej
 ```bash
 chmod +x wireguard.sh
 chmod +x vpn-manager.desktop
+```
 
 ## Permisos de Ejecución en el Icono del Escritorio
 Además, asegúrate de otorgar permisos de ejecución al archivo del icono del escritorio (vpn-manager.desktop) para que pueda ejecutarse correctamente.
@@ -24,16 +25,19 @@ El usuario debe tener permisos para usar sudo.
 
 ## Uso
 Otorga permisos de ejecución a los archivos:
-bash
-Copiar código
+
+```bash
+
 chmod +x wireguard.sh
 chmod +x vpn-manager.desktop
 Ejecuta el script desde la terminal:
-bash
-Copiar código
+```
+
+```bash
+
 ./wireguard.sh
 O desde el icono del escritorio, si has configurado vpn-manager.desktop.
-
+```
 
 ## Funcionamiento del Script
 Listar configuraciones: Muestra todas las configuraciones de WireGuard en /etc/wireguard.
