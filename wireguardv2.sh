@@ -61,6 +61,7 @@ conectar_vpn() {
         else
             echo "Hubo un problema al conectar la VPN $INTERFACE."
         fi
+        read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
     fi
 }
 
@@ -76,6 +77,7 @@ desconectar_vpn() {
         else
             echo "Hubo un problema al desconectar la VPN $INTERFACE."
         fi
+        read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
     fi
 }
 
@@ -90,11 +92,13 @@ ver_estado() {
         else
             echo "La interfaz $INTERFACE no está activa."
         fi
+        read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
     fi
 }
 
-# Bucle principal del script con listado automático de VPNs
+# Bucle principal del script con limpieza de pantalla
 while true; do
+    clear  # Limpia la pantalla antes de mostrar el menú
     echo "========================="
     echo " WireGuard VPN Manager"
     echo "========================="
@@ -114,3 +118,4 @@ while true; do
         *) echo "Opción inválida, intenta de nuevo." ;;
     esac
 done
+
